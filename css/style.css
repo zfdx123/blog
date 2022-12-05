@@ -12,8 +12,9 @@
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -44,8 +45,9 @@
     --shadow-color-1: rgba(0,0,0,0.08);
     --shadow-color-2: rgba(0,0,0,0.05);
     --shadow-hover-color: rgba(0,0,0,0.28);
-    --scrollbar-color: #42494c;
-    --scroll-bar-bg-color: #e6e6e6;
+    --scrollbar-color: #c1c1c1;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #fafafa;
     --link-color: #323739;
     --copyright-info-color: #c03;
     --avatar-background-color: #06c;
@@ -77,8 +79,9 @@
     --shadow-color-1: rgba(255,255,255,0.08);
     --shadow-color-2: rgba(255,255,255,0.05);
     --shadow-hover-color: rgba(69,69,69,0.28);
-    --scrollbar-color: #1d1e20;
-    --scroll-bar-bg-color: #4a4c53;
+    --scrollbar-color: #898989;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #2a2c30;
     --link-color: #c5c5cc;
     --copyright-info-color: #a30029;
     --avatar-background-color: #005cb8;
@@ -109,8 +112,9 @@
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -140,8 +144,9 @@
   --shadow-color-1: rgba(255,255,255,0.08);
   --shadow-color-2: rgba(255,255,255,0.05);
   --shadow-hover-color: rgba(69,69,69,0.28);
-  --scrollbar-color: #1d1e20;
-  --scroll-bar-bg-color: #4a4c53;
+  --scrollbar-color: #898989;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #2a2c30;
   --link-color: #c5c5cc;
   --copyright-info-color: #a30029;
   --avatar-background-color: #005cb8;
@@ -295,13 +300,23 @@
   width: 6px;
   height: 6px;
   transition: all 0.2s ease;
+  display: block;
 }
 *::-webkit-scrollbar-thumb {
   background: var(--scrollbar-color);
-  border-radius: 1px;
+  border-radius: 18px;
+  background-clip: content-box;
+  border: 3px solid transparent;
 }
 *::-webkit-scrollbar-track {
-  background: var(--scroll-bar-bg-color);
+  background-color: var(--scroll-bar-bg-color);
+  border: 1px solid var(--shadow-color-1);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-color-hover);
+  border-radius: 18px;
+  background-clip: content-box;
+  border: 3px solid transparent;
 }
 html,
 body {
@@ -319,7 +334,7 @@ body {
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 14px;
   height: 8px;
 }
 @media (max-width: 780px) {
@@ -617,8 +632,9 @@ button {
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -649,8 +665,9 @@ button {
     --shadow-color-1: rgba(0,0,0,0.08);
     --shadow-color-2: rgba(0,0,0,0.05);
     --shadow-hover-color: rgba(0,0,0,0.28);
-    --scrollbar-color: #42494c;
-    --scroll-bar-bg-color: #e6e6e6;
+    --scrollbar-color: #c1c1c1;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #fafafa;
     --link-color: #323739;
     --copyright-info-color: #c03;
     --avatar-background-color: #06c;
@@ -682,8 +699,9 @@ button {
     --shadow-color-1: rgba(255,255,255,0.08);
     --shadow-color-2: rgba(255,255,255,0.05);
     --shadow-hover-color: rgba(69,69,69,0.28);
-    --scrollbar-color: #1d1e20;
-    --scroll-bar-bg-color: #4a4c53;
+    --scrollbar-color: #898989;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #2a2c30;
     --link-color: #c5c5cc;
     --copyright-info-color: #a30029;
     --avatar-background-color: #005cb8;
@@ -714,8 +732,9 @@ button {
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -745,8 +764,9 @@ button {
   --shadow-color-1: rgba(255,255,255,0.08);
   --shadow-color-2: rgba(255,255,255,0.05);
   --shadow-hover-color: rgba(69,69,69,0.28);
-  --scrollbar-color: #1d1e20;
-  --scroll-bar-bg-color: #4a4c53;
+  --scrollbar-color: #898989;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #2a2c30;
   --link-color: #c5c5cc;
   --copyright-info-color: #a30029;
   --avatar-background-color: #005cb8;
@@ -1112,8 +1132,9 @@ pre .selector-pseudo {
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -1144,8 +1165,9 @@ pre .selector-pseudo {
     --shadow-color-1: rgba(0,0,0,0.08);
     --shadow-color-2: rgba(0,0,0,0.05);
     --shadow-hover-color: rgba(0,0,0,0.28);
-    --scrollbar-color: #42494c;
-    --scroll-bar-bg-color: #e6e6e6;
+    --scrollbar-color: #c1c1c1;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #fafafa;
     --link-color: #323739;
     --copyright-info-color: #c03;
     --avatar-background-color: #06c;
@@ -1177,8 +1199,9 @@ pre .selector-pseudo {
     --shadow-color-1: rgba(255,255,255,0.08);
     --shadow-color-2: rgba(255,255,255,0.05);
     --shadow-hover-color: rgba(69,69,69,0.28);
-    --scrollbar-color: #1d1e20;
-    --scroll-bar-bg-color: #4a4c53;
+    --scrollbar-color: #898989;
+    --scrollbar-color-hover: #a1a1a1;
+    --scroll-bar-bg-color: #2a2c30;
     --link-color: #c5c5cc;
     --copyright-info-color: #a30029;
     --avatar-background-color: #005cb8;
@@ -1209,8 +1232,9 @@ pre .selector-pseudo {
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
   --shadow-hover-color: rgba(0,0,0,0.28);
-  --scrollbar-color: #42494c;
-  --scroll-bar-bg-color: #e6e6e6;
+  --scrollbar-color: #c1c1c1;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #fafafa;
   --link-color: #323739;
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
@@ -1240,8 +1264,9 @@ pre .selector-pseudo {
   --shadow-color-1: rgba(255,255,255,0.08);
   --shadow-color-2: rgba(255,255,255,0.05);
   --shadow-hover-color: rgba(69,69,69,0.28);
-  --scrollbar-color: #1d1e20;
-  --scroll-bar-bg-color: #4a4c53;
+  --scrollbar-color: #898989;
+  --scrollbar-color-hover: #a1a1a1;
+  --scroll-bar-bg-color: #2a2c30;
   --link-color: #c5c5cc;
   --copyright-info-color: #a30029;
   --avatar-background-color: #005cb8;
