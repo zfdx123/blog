@@ -1,6 +1,6 @@
 :root {
   --background-color: #fff;
-  --second-background-color: #f7f7f7;
+  --second-background-color: #f2f2f2;
   --primary-color: #005080;
   --first-text-color: #323739;
   --second-text-color: #343a3c;
@@ -33,7 +33,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #fff;
-    --second-background-color: #f7f7f7;
+    --second-background-color: #f2f2f2;
     --primary-color: #005080;
     --first-text-color: #323739;
     --second-text-color: #343a3c;
@@ -67,7 +67,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #202124;
-    --second-background-color: #1d1e20;
+    --second-background-color: #2a2c30;
     --primary-color: #005080;
     --first-text-color: #d2d2d7;
     --second-text-color: #cbcbd1;
@@ -95,12 +95,12 @@
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #323739;
+    --first-screen-text-color: #d1d1b6;
   }
 }
 .light-mode {
   --background-color: #fff;
-  --second-background-color: #f7f7f7;
+  --second-background-color: #f2f2f2;
   --primary-color: #005080;
   --first-text-color: #323739;
   --second-text-color: #343a3c;
@@ -132,7 +132,7 @@
 }
 .dark-mode {
   --background-color: #202124;
-  --second-background-color: #1d1e20;
+  --second-background-color: #2a2c30;
   --primary-color: #005080;
   --first-text-color: #d2d2d7;
   --second-text-color: #cbcbd1;
@@ -160,7 +160,7 @@
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #323739;
+  --first-screen-text-color: #d1d1b6;
 }
 :root {
   --code-foreground: #3b4143;
