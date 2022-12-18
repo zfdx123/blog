@@ -2633,7 +2633,7 @@ pre .selector-pseudo {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("/blog/images/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+    background: url("/blog/images/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -2642,7 +2642,7 @@ pre .selector-pseudo {
   }
 }
 .light-mode .first-screen-container {
-  background: url("/blog/images/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+  background: url("/blog/images/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
   background: url("/blog/images/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
